@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimum Green</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="window page-menu hidden">
+      <button class="window__close-btn page-menu__close-btn">
+        <svg width="39" height="39">
+          <use xlink:href="./assets/icons/close-icon.svg#close-icon"></use>
+        </svg>
+      </button>
+      <div class="page-menu__logo">
+        <svg width="193" height="212">
+          <use xlink:href="./assets/img/logo.svg#logo"></use>
+        </svg>
+        Optimum <span>Green</span>
+      </div>
+      <nav class="page-menu__nav page-menu-nav">
+        <a href="#" class="page-menu-nav__link">Продукты</a>
+        <a href="#" class="page-menu-nav__link">Технология</a>
+        <a href="#" class="page-menu-nav__link">О компании</a>
+        <a href="#" class="page-menu-nav__link">Новости</a>
+        <a href="#" class="page-menu-nav__link">Контакты</a>
+      </nav>
+      <a href="#" class="tg-link">
+        <div class="tg-icon"></div>
+      </a>
+    </div>
+    <div class="window calc-window hidden">
+      <button class="window__close-btn page-menu__close-btn">
+        <svg width="39" height="39">
+          <use xlink:href="./assets/icons/close-icon.svg#close-icon"></use>
+        </svg>
+      </button>
+      <h2 class="calc-window__heading">Калькулятор</h2>
+      <form class="calc-form">
+        <div class="col">
+          <h5 class="col__heading">Корпус</h5>
+          <div class="radio-inputs">
+            <label>
+              <input
+                value="базовый"
+                type="radio"
+                name="body"
+                checked
+                id="body-input"
+                style="display: none" />
+              <div class="checkbox"></div>
+              базовый
+            </label>
+            <label>
+              <input
+                value="увеличенный размер"
+                type="radio"
+                name="body"
+                id="body-input"
+                style="display: none" />
+              <div class="checkbox"></div>
+              увеличенный размер
+            </label>
+            <label>
+              <input
+                value="проектирование"
+                type="radio"
+                name="body"
+                id="body-input"
+                style="display: none" />
+              <div class="checkbox"></div>
+              Проектирование
+            </label>
+            <label>
+              <input
+                value="индивидуальный"
+                type="radio"
+                name="body"
+                id="body-input"
+                style="display: none" />
+              <div class="checkbox"></div>
+              индивидуальный дизайн
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="col__heading">Размер (ширина)</h5>
+          <div class="range-input">
+            1 м.
+            <input class="range" name="size" type="range" min="0" max="10" value="0" step="2" />
+            10 м.
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="col__heading">Системы</h5>
+          <div class="radio-inputs">
+            <label>
+              <input
+                style="display: none"
+                value="базовая"
+                type="radio"
+                name="system"
+                id=""
+                checked />
+              <div class="checkbox"></div>
+
+              базовая
+            </label>
+            <label>
+              <input
+                style="display: none"
+                value="распределение веществ"
+                type="radio"
+                name="system"
+                id="" />
+              <div class="checkbox"></div>
+
+              Распределение веществ
+            </label>
+            <label>
+              <input style="display: none" value="питание" type="radio" name="system" id="" />
+              <div class="checkbox"></div>
+
+              питание
+            </label>
+            <label>
+              <input
+                style="display: none"
+                value="влажность субстрата"
+                type="radio"
+                name="system"
+                id="" />
+              <div class="checkbox"></div>
+
+              влажность субстрата
+            </label>
+            <label>
+              <input style="display: none" value="датчик co2" type="radio" name="system" id="" />
+              <div class="checkbox"></div>
+
+              датчик Со2
+            </label>
+            <label>
+              <input
+                style="display: none"
+                value="видеонаблюдение"
+                type="radio"
+                name="system"
+                id="" />
+              <div class="checkbox"></div>
+
+              Видео наблюдение
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="col__heading">ПО</h5>
+          <label>
+            <input style="display: none" checked type="checkbox" name="po" value="включить" id="" />
+            <div class="checkbox"></div>
+          </label>
+        </div>
+      </form>
+      <div class="calc-window__total-price total-price">
+        итоговая цена: <span class="total-price__price">1 000 000 000 руб.</span>
+      </div>
+    </div>
+    <header class="header">
+      <div class="wrapper">
+        <a href="/" class="logo-link">Optimum <span class="logo-link__green-text">Green</span></a>
+        <nav class="nav">
+          <a href="#" class="nav__link">ПРОДУКТЫ</a>
+          <a href="#" class="nav__link">ТЕХНОЛОГИЯ</a>
+          <a href="#" class="nav__link">О КОМПАНИИ</a>
+          <a href="#" class="nav__link">НОВОСТИ</a>
+          <a href="#" class="nav__link">КОНТАКТЫ</a>
+        </nav>
+        <div class="socials">
+          <a href="/" class="social__link">
+            <div class="tg-icon"></div>
+          </a>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-btn__line"></div>
+        </button>
+      </div>
+    </header>
+    <main class="main" id="fullpage">
+      <div class="blured-promo main-section">
+        <div class="main-section__background-wrapper">
+          <div class="main-section__background"></div>
+        </div>
+        <div class="main-section__background-blured-wrapper">
+          <div class="main-section__background-blured"></div>
+        </div>
+        <div class="main-section__front-text-wrapper">
+          <div class="main-section__front-text">O G</div>
+        </div>
+        <div class="main-section__back-text-wrapper">
+          <div class="main-section__back-text">G</div>
+        </div>
+      </div>
+      <section class="promo section active">
+        <div class="wrapper">
+          <h2 class="slogan-words">
+            <span class="slogan-words__slogan">Эффективность</span>
+            <span class="slogan-words__slogan">Инновации</span>
+          </h2>
+        </div>
+      </section>
+      <section class="effect section">
+        <div class="wrapper">
+          <div class="content">
+            <div class="text-content">
+              <h2 class="subheading">Эффективность</h2>
+              <p class="text">
+                Прошедшая весь спектр технологических испытаний сертифицированная продукция Optimum
+                Green позволяет гарантированно увеличить:
+              </p>
+              <ul class="list">
+                <li class="list-item">Скорость роста = 121%:</li>
+                <li class="list-item">Конечная масса = 118%</li>
+                <li class="list-item">Экономическая целесообразность = 140%</li>
+              </ul>
+              <a href="#" class="btn btn-toggle-calc">Расчитать стоимость</a>
+            </div>
+            <div class="image-holder">
+              <img src="./assets/img/1-bg.png" alt="Эффективность" class="section-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="innovation section">
+        <div class="wrapper">
+          <div class="content">
+            <div class="image-holder">
+              <img
+                src="./assets/img/phone-img.png"
+                class="section-img phone-img"
+                alt="Инновации"
+                class="section-img" />
+              <a href="#" class="mass-link">
+                <img src="./assets/img/gp-adv.png" alt="Google Play Link" class="google-play-img" />
+              </a>
+              <a href="#" class="mass-link">
+                <img src="./assets/img/ap-adv.png" alt="Google Play Link" class="google-play-img" />
+              </a>
+            </div>
+            <div class="text-content">
+              <h2 class="subheading">Инновации</h2>
+              <p class="text">
+                Управление из любой точки страны Просто откройте приложение, выберете необходимую
+                культуру и наслаждайтесь процессом, пока Optimum Green Farm все сделает за вас
+              </p>
+              <a href="#" class="btn">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="params section">
+        <div class="wrapper">
+          <h2 class="subheading">Регулируемые параметры</h2>
+          <div class="params-list">
+            <div class="param">
+              <div class="param__icon">
+                <svg width="55" height="103">
+                  <use xlink:href="./assets/icons/temp-icon.svg#temp-icon"></use>
+                </svg>
+              </div>
+              <h3 class="param__heading">Температура</h3>
+              <p class="param__text">Температура среды и субстрата</p>
+            </div>
+            <div class="param">
+              <div class="param__icon">
+                <svg width="88" height="103">
+                  <use xlink:href="./assets/icons/nutrition-icon.svg#nutrition-icon"></use>
+                </svg>
+              </div>
+              <h3 class="param__heading">Питание</h3>
+              <p class="param__text">
+                Регулировка концентрации питательных веществ в системе питания
+              </p>
+            </div>
+            <div class="param">
+              <div class="param__icon">
+                <svg width="89" height="103">
+                  <use xlink:href="./assets/icons/lamp-icon.svg#lamp-icon"></use>
+                </svg>
+              </div>
+              <h3 class="param__heading">Свет</h3>
+              <p class="param__text">Интенсивность, направленность, фотопериодичность</p>
+            </div>
+            <div class="param">
+              <div class="param__icon">
+                <svg width="78" height="103">
+                  <use xlink:href="./assets/icons/water-icon.svg#water-icon"></use>
+                </svg>
+              </div>
+              <h3 class="param__heading">Влажность</h3>
+              <p class="param__text">Влажность среды и субстрата</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="personality section">
+        <div class="wrapper">
+          <h2 class="subheading">Персональный подход - уникальный дизайн</h2>
+          <div class="content">
+            <div class="text-content">
+              <p class="text">
+                Продукция Optimum Green идеально впишется в любое дизайнерское решение из-за
+                использования адаптивного под пространство и стилистику умного технологического
+                комплекса
+              </p>
+              <a href="#" class="btn">Перейти в каталог</a>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/2.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/3.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/4.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/5.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="swiper-left">
+                  <svg
+                    width="25"
+                    height="41"
+                    viewBox="0 0 25 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.000488281"
+                      y="20.0432"
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="rotate(-45 0.000488281 20.0432)"
+                      fill="white" />
+                    <rect
+                      x="20.0435"
+                      y="40.2089"
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="rotate(-135 20.0435 40.2089)"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="swiper-right">
+                  <svg
+                    width="25"
+                    height="41"
+                    viewBox="0 0 25 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 24.0518 20.0432)"
+                      fill="white" />
+                    <rect
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 4.00879 40.2089)"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="human section">
+        <div class="wrapper">
+          <h2 class="subheading">МИП - это про людей</h2>
+          <div class="content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/1.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/2.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/3.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/4.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/swiper-img/5.jpg" alt="Swiper Img" class="swiper-img" />
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="swiper-left">
+                  <svg
+                    width="25"
+                    height="41"
+                    viewBox="0 0 25 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.000488281"
+                      y="20.0432"
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="rotate(-45 0.000488281 20.0432)"
+                      fill="white" />
+                    <rect
+                      x="20.0435"
+                      y="40.2089"
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="rotate(-135 20.0435 40.2089)"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="swiper-right">
+                  <svg
+                    width="25"
+                    height="41"
+                    viewBox="0 0 25 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 24.0518 20.0432)"
+                      fill="white" />
+                    <rect
+                      width="28.3454"
+                      height="5.66908"
+                      rx="1.41727"
+                      transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 4.00879 40.2089)"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="text-content">
+              <p class="text">
+                Мы объединяем разработку высокотехнологичных решений, производство и дизайн
+              </p>
+              <a href="#" class="btn">Стать акционером</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"
+      integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="./scripts/onePage.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>
