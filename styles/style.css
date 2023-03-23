@@ -186,7 +186,7 @@ body {
 }
 
 .calc-window.hidden {
-  transform: translateX(-100%);
+  transform: translateX(-200vw);
 }
 
 .calc-window {
@@ -434,7 +434,7 @@ body {
 }
 
 .hidden {
-  transform: translateY(-100%);
+  transform: translateY(-200vh);
 }
 
 .page-menu-nav {
