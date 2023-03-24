@@ -1,6 +1,5 @@
 .swiper {
   width: 100%;
-  height: 482px;
   &-slide {
     img {
       width: 100%;
@@ -8,8 +7,8 @@
     }
   }
   .swiper-navigation {
-    bottom: 17px;
     left: 0;
+    top: 80%;
     width: 100%;
     justify-content: center;
     z-index: 99;
@@ -21,39 +20,17 @@
     .swiper-right {
       cursor: pointer;
       transition: transform 0.13s;
+      svg {
+        width: 2.8125rem;
+        height: 2.8125rem;
+      }
       &:active {
         transform: translateY(2px);
       }
     }
   }
 }
-.human {
-  .wrapper {
-    align-items: flex-end;
-    text-align: right;
-    justify-content: center;
 
-    .subheading {
-      margin: 0;
-      margin-bottom: 48px;
-    }
-    .content {
-      width: 100%;
-      display: flex;
-      align-items: center;
-
-      justify-content: space-between;
-
-      .text-content {
-        max-width: 781px;
-        display: flex;
-        align-items: end;
-        flex-direction: column;
-        gap: 20px;
-      }
-    }
-  }
-}
 .swiper {
 }
 
@@ -61,5 +38,3 @@
 }
 .btn {
 }
-
-

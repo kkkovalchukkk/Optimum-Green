@@ -8,11 +8,12 @@ const swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 3000,
   },
-
+  autoHeight: false,
   coverflowEffect: {
     rotate: 10,
     modifier: 0.5,
     scale: 0.8,
+    slideShadows: false,
   },
   navigation: {
     nextEl: ".swiper-right",

@@ -17,15 +17,15 @@
     font-family: "Tenor Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
-    line-height: 64px;
+    font-size: 3.4375rem;
+    line-height: 4rem;
     text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffffff;
     &--first {
-      left: 22px;
-      bottom: 154px;
+      left: 1.375rem;
+      bottom: 9.625rem;
     }
   }
 }
@@ -64,7 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 1.875rem;
   }
   & > * {
     min-height: 100vh;
@@ -79,15 +79,15 @@
     z-index: 5;
   }
   &__background-blured {
-    left: -50px;
-    top: -50px;
-    min-width: calc(100vw + 100px);
-    min-height: calc(100vh + 100px);
+    left: -3.125rem;
+    top: -3.125rem;
+    min-width: calc(100vw + 6.25rem);
+    min-height: calc(100vh + 6.25rem);
     background-image: url("../assets/img/bg.jpg");
     background-position: center;
     background-size: cover;
     z-index: 15;
-    filter: blur(15px) brightness(2);
+    filter: blur(0.9375rem) brightness(2);
   }
   &__front-text {
     font-family: "Great Vibes";
@@ -105,8 +105,8 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: 400;
-    font-size: 319.731px;
-    line-height: 400px;
+    font-size: 19.9832rem;
+    line-height: 25rem;
     letter-spacing: 0.08em;
 
     color: #ffffff;
@@ -123,8 +123,8 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: 400;
-    font-size: 319.731px;
-    line-height: 400px;
+    font-size: 19.9832rem;
+    line-height: 25rem;
     letter-spacing: 0.08em;
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
